@@ -1,0 +1,17 @@
+<%= form_for(@cactu) do |f| %>
+  <% if @cactu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cactu.errors.count, "error") %> prohibited this cactu from being saved:</h2>
+
+      <ul>
+      <% @cactu.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

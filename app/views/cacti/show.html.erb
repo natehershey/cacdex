@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Common name:</b>
+  <%= @cactus.common_name %>
+</p>
+
+<p>
+  <b>Latin name:</b>
+  <%= @cactus.latin_name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @cactus.description %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @cactus.notes %>
+</p>
+
+<p>
+  <b>Planted on:</b>
+  <%= @cactus.planted_on %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @cactus.image %>
+</p>
+
+
+<%= link_to 'Edit', edit_cactus_path(@cactus) %> |
+<%= link_to 'Back', cacti_path %>

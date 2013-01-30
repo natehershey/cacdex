@@ -1,0 +1,21 @@
+<h1>Listing cactus</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cactus.each do |cactu| %>
+  <tr>
+    <td><%= link_to 'Show', cactu %></td>
+    <td><%= link_to 'Edit', edit_cactu_path(cactu) %></td>
+    <td><%= link_to 'Destroy', cactu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cactu', new_cactu_path %>
